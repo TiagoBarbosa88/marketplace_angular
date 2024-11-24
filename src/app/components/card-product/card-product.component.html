@@ -1,0 +1,19 @@
+<mat-card-content class="mat-container" *ngFor="let product of listProducts mat-elevation-z2">
+  <mat-card class="card-product">
+    <mat-card-title>
+      <h2>{{product.title | slice:0:25 }} ...</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <h3>{{product.category}}</h3>
+    </mat-card-subtitle>
+    <mat-card-content class="card-content">
+      <img src="{{product.image}}" alt="{{product.title}}">
+      <p class="card-description">
+        {{product.description | slice:0:90}} ...
+      </p>
+      <p class="card-description">{{product.price}}</p>
+      <button>Carrinho</button>
+    </mat-card-content>
+  </mat-card>
+
+</mat-card-content>

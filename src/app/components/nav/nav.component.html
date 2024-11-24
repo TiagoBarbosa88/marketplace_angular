@@ -1,0 +1,52 @@
+<mat-sidenav-container class="nav-container">
+  <!-- Sidenav -->
+  <mat-sidenav #sidenav class="sidenav" mode="side" fixedInViewport="true" closed="true" fixedTopGap="64">
+    <!-- Seção do usuário -->
+    <div class="user">
+      <span>
+        <i class="material-icons">account_circle</i>
+      </span>
+      <a href="" aria-label="Login">
+        Olá, faça seu login
+      </a>
+    </div>
+    <!-- Lista de links -->
+    <mat-list class="menu-list">
+      <div class="menu">
+        <i class="material-icons">star</i>
+        <a mat-list-item routerLink="/list-products" aria-label="Destaques">
+          Lista Produtos
+        </a>
+      </div>
+      <div class="menu">
+        <i class="material-icons">shopping_cart</i>
+        <a mat-list-item routerLink="/mais-vendidos" aria-label="Mais Vendidos">
+          Mais Vendidos
+        </a>
+      </div>
+
+      <div class="menu">
+        <i class="material-icons">new_releases</i>
+        <a mat-list-item routerLink="/novidades" aria-label="Novidades na Amazon">
+          Novidades
+        </a>
+      </div>
+
+      <div class="menu">
+        <i class="material-icons">trending_up</i>
+        <a mat-list-item routerLink="/produtos-em-alta" aria-label="Produtos em Alta">
+          Produtos em Alta
+        </a>
+      </div>
+      
+    </mat-list>
+  </mat-sidenav>
+
+  <!-- Conteúdo Principal -->
+  <mat-sidenav-content class="content">
+    <button mat-icon-button (click)="sidenav.toggle()" class="mat-nav-button mb" aria-label="Abrir Menu">
+      <i class="material-icons">menu</i>
+    </button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

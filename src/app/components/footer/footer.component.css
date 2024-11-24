@@ -1,0 +1,10 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #172332
+}
+
+.icon a, i {
+ color: aliceblue;
+ text-decoration: none;
+}

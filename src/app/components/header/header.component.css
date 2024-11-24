@@ -1,0 +1,11 @@
+.header {
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;    
+  padding: 10px; 
+}
+
+.icon i{
+  color: aliceblue;
+  font-size: 2rem;
+}
